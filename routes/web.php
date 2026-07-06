@@ -32,7 +32,7 @@ use App\Http\Controllers\TeacherGradeController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::get('/login', [AuthController::class, 'index'])->name('loginn');
 Route::post('/login', [AuthController::class, 'store'])->name('login.store');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
