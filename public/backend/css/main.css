@@ -1,0 +1,184 @@
+:root {
+    --bg-color-page: #73B4FE;
+    --bg-color-btn: #4548AD;
+    --bg-color-btn-hover: #191B6B;
+
+    font-size: 16px;
+
+    --size-sm: 0.5rem;
+    --size-m: 1rem;
+    --size-g: 1.5rem;
+    --size-xg: 2rem;
+    --size-xxg: 3.5rem;
+
+    --border-color: #ccc;
+    --border-color-hover: #73B4FE;
+    --primary-color: #000;
+    --secondary-color: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+}
+
+#main-container {
+    font-size: 0;
+    font-family: 'Merriweather', serif;
+}
+
+#left-container,
+#right-container {
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    width: 50%;
+}
+
+#right-container {
+    background-color: var(--bg-color-page);
+    background-image: url(../img/ilustracion.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+form {
+    width: 400px;
+    margin: var(--size-xxg) auto;
+    font-size: var(--size-m);
+}
+
+#logo-container {
+    text-align: center;
+}
+
+#logo-container img {
+    width: 100px;
+}
+
+#title-container h2 {
+    font-size: var(--size-xxg);
+    text-align: center;
+    padding: var(--size-g);
+}
+
+#separator-container {
+    text-align: center;
+    padding: var(--size-g);
+}
+
+#separator-container span {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+.line {
+    height: 2px;
+    background-color: var(--border-color);
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#inputs-container label,
+#role-selection-container label {
+    display: block;
+    padding: var(--size-sm) 0;
+    font-weight: bolder;
+}
+
+#inputs-container input[type=text],
+#inputs-container input[type=password],
+#role-selection-container select {
+    display: block;
+    outline: none;
+    padding: var(--size-sm);
+    width: 100%;
+    font-size: var(--size-m);
+    border: solid 2px var(--border-color);
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+#role-selection-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: var(--size-sm) var(--size-m);
+    width: 100%;
+    font-size: var(--size-m);
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: #e7f0ff; /* Fondo azul claro */
+    border: 2px solid var(--border-color);
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    background-image: url("../img/arrow-icon.png");
+    background-repeat: no-repeat;
+    background-position: right var(--size-sm) center;
+    background-size: 1rem;
+}
+
+#inputs-container input[type=text]:hover,
+#inputs-container input[type=password]:hover,
+#role-selection-container select:hover {
+    border: solid 2px var(--border-color-hover);
+}
+
+#inputs-container input[type=text]:focus,
+#inputs-container input[type=password]:focus,
+#role-selection-container select:focus {
+    border: solid 2px var(--border-color-hover);
+    outline: none;
+}
+
+#options-container {
+    padding: var(--size-m) 0;
+}
+
+#options-container div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#options-container div.right {
+    width: calc(100% - 140px);
+    text-align: right;
+}
+
+#buttons-container {
+    text-align: center;
+    padding: var(--size-g) 0;
+}
+
+.btn {
+    border: 0;
+    background-color: var(--bg-color-btn);
+    color: white;
+    cursor: pointer;
+    padding: var(--size-sm);
+    width: 100%;
+    font-weight: bold;
+    font-size: var(--size-m);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: var(--bg-color-btn-hover);
+}
+
+#register-container {
+    color: var(--secondary-color);
+    padding: var(--size-m) 0;
+    text-align: center;
+}

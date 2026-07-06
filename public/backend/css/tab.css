@@ -1,0 +1,37 @@
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.tab-content {
+  background-color: #ffffff;
+  padding: 50px 40px;
+}
+.tab-content h3 {
+cursor: pointer;
+
+}
+
+.tab-content h4 {
+ 
+  margin-bottom: 20px;
+  color: #000224;
+  font-weight: 600;
+
+}
+.tab-content p {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: #202238;
+}
+.tab-content div {
+  display: none;
+}
+.tab-content .active {
+  display: block;
+}
+.tabs .active {
+  background-color: #ffffff;
+  color: #4d5bf9;
+}
